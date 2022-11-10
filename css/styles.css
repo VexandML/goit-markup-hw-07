@@ -210,7 +210,7 @@ section {
   margin-left: auto;
 }
 
-.hero-title {
+.hero__title {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 900;
@@ -250,7 +250,7 @@ section {
 }
 
 /* Секція 2-3-4 */
-.section-title, .section-title-whatwedo {
+.team__title, .whatwedo__title {
   color: var(--color-inverted);
   font-weight: 700;
   font-size: 36px;
@@ -264,8 +264,8 @@ section {
   padding: 94px 0;
 }
 
-/* Секція 2 (Advantages) */
-.features {
+/* Секція 2 (Features) */
+.features__subtitle {
   color: var(--color-inverted);
   font-weight: 700;
   font-size: 14px;
@@ -275,18 +275,18 @@ section {
   margin-bottom: 10px;
 }
 
-.features-list {
+.features__list {
   list-style: none;
   display: flex;
   gap: 30px;
   margin: 0;
 }
 
-.feat-list-text {
+.features__item {
   flex-basis: calc((100% - 90px) / 4);
 }
 
-.description-features {
+.features__description {
   font-size: 14px;
   line-height: 1.71;
   color: var(--color-primary);
@@ -295,7 +295,7 @@ section {
   padding: 0;
 }
 
-.features-image {
+.features__image {
   display: flex;
   width: 270px;
   height: 120px;
@@ -307,11 +307,11 @@ section {
 }
 
 /* Секція 3 (Чим ми займаємося) */
-.section-title-whatwedo {
+.whatwedo__title {
   margin-bottom: 50px;
 }
 
-.section-title-hidden {
+.features-box__title__is-hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -324,7 +324,7 @@ section {
   margin: -1px;
 }
 
-.work-type-list {
+.whatwedo__list {
   list-style: none;
   display: flex;
   gap: 30px;
@@ -332,7 +332,7 @@ section {
   margin: 0;
 }
 
-.work-type-photo {
+.whatwedo__item {
   display: flex;
   flex-basis: calc((100% - 60px) / 3 );
   padding: 0;
@@ -342,7 +342,7 @@ section {
 }
 
 
-.work-type-text {
+.whatwedo__text {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -367,7 +367,7 @@ section {
   padding: 94px 0;
 }
 
-.team-members-list{
+.team__list{
   list-style: none;
   display: flex;
   gap: 30px;
@@ -376,18 +376,18 @@ section {
   padding: 0;
 }
 
-.team-text {
+.employees {
   padding: 30px 0;
 }
 
-.team-list {
+.team__members__item {
   background-color: var(--color-bcg-primary);
   flex-basis: calc((100% - 90px) / 4 );
   border-radius: 0 0 4px 4px; 
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
 }
 
-.name {
+.employees__title {
   color: var(--color-inverted);
   font-weight: 500;
   font-size: 16px;
@@ -396,25 +396,25 @@ section {
   margin-bottom: 10px;
 }
 
-.position {
+.employees__subtitle {
   font-size: 16px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
 }
 
-.social-team-list {
+.social-employees__list {
   display: flex;
   justify-content: center;
   margin: 16px 0 0 0;
 }
 
-.social-team-item:not(:last-child) {
+.social-employees__item:not(:last-child) {
   margin: 0 10px 0 0;
   background-color: var(--color-bcg-primary);
 }
 
-.link-social-team {
+.social-employees__link {
   width: 44px;
   height: 44px;
   display: flex;
@@ -425,17 +425,17 @@ section {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-social-team:hover,
-.link-social-team:focus {
+.social-employees__link:hover,
+.social-employees__link:focus {
   background-color: var(--color-brand);
 }
 
-.link-social-team:hover .social-team-icon,
-.link-social-team:focus .social-team-icon {
+.social-employees__link:hover .social-employees__icon,
+.social-employees__link:focus .social-employees__icon {
   fill: var(--color-bcg-primary);
 }
 
-.social-team-icon {
+.social-employees__icon {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -446,7 +446,7 @@ section {
   padding-bottom: 94px;
 }
 
-.regular-title {
+.regular__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -456,16 +456,16 @@ section {
   color: var(--color-black);
 }
 
-.regular-list {
+.regular__list {
   display: flex;
   justify-content: center;
 }
 
-.regular-item:not(:last-child) {
+.regular__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.regular-link {
+.regular__link {
   display: flex;
   width: 170px;
   height: 92px;
@@ -477,19 +477,19 @@ section {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.regular-icon {
+.regular__icon {
   fill: #AFB1B8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.regular-link:hover,
-.regular-link:focus {
+.regular__link:hover,
+.regular__link:focus {
     background-color: var(--color-bcg-primary);
     border-color: var(--color-brand);
 }
 
-.regular-link:hover .regular-icon,
-.regular-link:focus .regular-icon {
+.regular__link:hover .regular__icon,
+.regular__link:focus .regular__icon {
     fill: var(--color-brand);
 }
 
